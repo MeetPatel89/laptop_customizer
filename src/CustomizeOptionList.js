@@ -18,11 +18,11 @@ export default class CustomizeOptionList extends React.Component {
               return (
                 <CustomizeOption
                 id={itemHash}
-                name={slugify(feature)}
+                feature={slugify(feature)}
                 checked={item.name === this.props.selected[feature].name}
                 key={itemHash}
                 item={item}
-                updateFeature={this.updateFeature}
+                updateFeature={this.props.updateFeature}
                 />
               );
             });

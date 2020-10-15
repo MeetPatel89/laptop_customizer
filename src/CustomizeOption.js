@@ -14,9 +14,9 @@ export default class CustomizeOption extends React.Component {
               type="radio"
               id={this.props.id}
               className="feature__option"
-              name={this.props.name}
+              name={this.props.feature}
               checked={this.props.checked}
-              onChange={() => this.updateFeature}
+              onChange={(e) => this.props.updateFeature(this.props.feature, this.props.item)}
             />
             <label htmlFor={this.props.id} className="feature__label">
               {this.props.item.name} ({USCurrencyFormat.format(this.props.item.cost)})

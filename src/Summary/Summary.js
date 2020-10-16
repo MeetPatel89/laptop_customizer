@@ -1,6 +1,6 @@
 import React from 'react';
-import TotalCost from './TotalCost';
-import ItemCost from './ItemCost';
+import TotalCost from '../TotalCost/TotalCost';
+import ItemCost from '../ItemCost/ItemCost';
 
 // This object will allow us to
 // easily convert numbers into US dollar values

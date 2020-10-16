@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 
-
+import Features from './Features';
 
 import './App.css';
 
-import Header from './Header';
-import CustomizeOptionList from './CustomizeOptionList';
-import Summary from './Summary';
+import Header from './Header/Header';
+
+import Summary from './Summary/Summary';
+import MainForm from './MainForm/MainForm';
 
 
 
@@ -49,8 +50,8 @@ class App extends Component {
       <div className="App">
         <Header/>
         <main>
-          <CustomizeOptionList 
-            features={this.props.features}
+          <MainForm 
+            features={Features}
             selected={this.state.selected}
             updateFeature={this.updateFeature}
           />

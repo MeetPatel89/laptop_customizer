@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomizeOption from './CustomizeOption';
+import CustomizeOption from '../CustomizeOption/CustomizeOption';
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
@@ -37,10 +37,12 @@ export default class CustomizeOptionList extends React.Component {
             );
           });
         return (
-            <form className="main__form">
-            <h2>Customize your laptop</h2>
-            {features}
-          </form>
+            
+            <div className="customize-options-list">
+              {features}
+            </div>
+            
+          
         )
     }
 }

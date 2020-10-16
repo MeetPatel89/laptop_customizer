@@ -6,6 +6,7 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
     currency: 'USD'
   });
 
+
 export default class CustomizeOption extends React.Component {
     render() {
         return (
@@ -22,8 +23,7 @@ export default class CustomizeOption extends React.Component {
               {this.props.item.name} ({USCurrencyFormat.format(this.props.item.cost)})
             </label>
           </div>
-        )
-        
+        )       
     }
 }
 
